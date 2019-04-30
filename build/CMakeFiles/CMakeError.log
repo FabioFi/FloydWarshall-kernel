@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f27ad/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f27ad.dir/build.make CMakeFiles/cmTC_f27ad.dir/build
+make[1]: Entering directory '/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f27ad.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_f27ad.dir/CheckSymbolExists.cxx.o -c /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+Linking CXX executable cmTC_f27ad
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f27ad.dir/link.txt --verbose=1
+/usr/bin/c++       CMakeFiles/cmTC_f27ad.dir/CheckSymbolExists.cxx.o  -o cmTC_f27ad 
+CMakeFiles/cmTC_f27ad.dir/CheckSymbolExists.cxx.o: In function `main':
+CheckSymbolExists.cxx:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_f27ad.dir/build.make:97: recipe for target 'cmTC_f27ad' failed
+make[1]: *** [cmTC_f27ad] Error 1
+make[1]: Leaving directory '/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f27ad/fast' failed
+make: *** [cmTC_f27ad/fast] Error 2
+
+File /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_863cb/fast"
+/usr/bin/make -f CMakeFiles/cmTC_863cb.dir/build.make CMakeFiles/cmTC_863cb.dir/build
+make[1]: Entering directory '/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_863cb.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_863cb.dir/CheckFunctionExists.cxx.o -c /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_863cb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_863cb.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_863cb.dir/CheckFunctionExists.cxx.o  -o cmTC_863cb -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_863cb.dir/build.make:97: recipe for target 'cmTC_863cb' failed
+make[1]: *** [cmTC_863cb] Error 1
+make[1]: Leaving directory '/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_863cb/fast' failed
+make: *** [cmTC_863cb/fast] Error 2
+
+
