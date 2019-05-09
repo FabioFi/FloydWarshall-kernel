@@ -3,7 +3,7 @@
 
 CMakeFiles/floydwarshall.dir/src/FloydWarshall.cpp.o
  ../include/FloydWarshall.hpp
- /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/FloydWarshall.cpp
+ /storage/fhamza/0_elaborato_arch/elaborati/1_kernel/1_kernel_FloydWarshall/src/FloydWarshall.cpp
 CMakeFiles/floydwarshall.dir/src/Graph/GraphBase.cpp.o
  ../include/Graph/GraphBase.hpp
  ../include/Host/Basic.hpp
@@ -21,7 +21,7 @@ CMakeFiles/floydwarshall.dir/src/Graph/GraphBase.cpp.o
  ../include/Host/impl/PrintExt.i.hpp
  ../include/Host/impl/Terminal.i.hpp
  ../include/HostDevice.hpp
- /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphBase.cpp
+ /storage/fhamza/0_elaborato_arch/elaborati/1_kernel/1_kernel_FloydWarshall/src/Graph/GraphBase.cpp
 CMakeFiles/floydwarshall.dir/src/Graph/GraphStd.cpp.o
  ../include/Graph/GraphBase.hpp
  ../include/Graph/GraphStd.hpp
@@ -47,7 +47,7 @@ CMakeFiles/floydwarshall.dir/src/Graph/GraphStd.cpp.o
  ../include/Host/impl/Statistics.i.hpp
  ../include/Host/impl/Terminal.i.hpp
  ../include/HostDevice.hpp
- /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphStd.cpp
+ /storage/fhamza/0_elaborato_arch/elaborati/1_kernel/1_kernel_FloydWarshall/src/Graph/GraphStd.cpp
 CMakeFiles/floydwarshall.dir/src/Graph/GraphStdRead.cpp.o
  ../include/Graph/GraphBase.hpp
  ../include/Graph/GraphStd.hpp
@@ -73,7 +73,7 @@ CMakeFiles/floydwarshall.dir/src/Graph/GraphStdRead.cpp.o
  ../include/Host/impl/PrintExt.i.hpp
  ../include/Host/impl/Terminal.i.hpp
  ../include/HostDevice.hpp
- /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphStdRead.cpp
+ /storage/fhamza/0_elaborato_arch/elaborati/1_kernel/1_kernel_FloydWarshall/src/Graph/GraphStdRead.cpp
 CMakeFiles/floydwarshall.dir/src/Graph/GraphWeight.cpp.o
  ../include/Graph/GraphBase.hpp
  ../include/Graph/GraphStd.hpp
@@ -99,7 +99,7 @@ CMakeFiles/floydwarshall.dir/src/Graph/GraphWeight.cpp.o
  ../include/Host/impl/PrintExt.i.hpp
  ../include/Host/impl/Terminal.i.hpp
  ../include/HostDevice.hpp
- /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphWeight.cpp
+ /storage/fhamza/0_elaborato_arch/elaborati/1_kernel/1_kernel_FloydWarshall/src/Graph/GraphWeight.cpp
 CMakeFiles/floydwarshall.dir/src/Graph/GraphWeightRead.cpp.o
  ../include/Graph/GraphBase.hpp
  ../include/Graph/GraphStd.hpp
@@ -127,7 +127,7 @@ CMakeFiles/floydwarshall.dir/src/Graph/GraphWeightRead.cpp.o
  ../include/Host/impl/PrintExt.i.hpp
  ../include/Host/impl/Terminal.i.hpp
  ../include/HostDevice.hpp
- /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphWeightRead.cpp
+ /storage/fhamza/0_elaborato_arch/elaborati/1_kernel/1_kernel_FloydWarshall/src/Graph/GraphWeightRead.cpp
 CMakeFiles/floydwarshall.dir/src/Host/FileUtil.cpp.o
  ../include/Host/Basic.hpp
  ../include/Host/FileUtil.hpp
@@ -140,7 +140,7 @@ CMakeFiles/floydwarshall.dir/src/Host/FileUtil.cpp.o
  ../include/Host/impl/Numeric.i.hpp
  ../include/Host/impl/Terminal.i.hpp
  ../include/HostDevice.hpp
- /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Host/FileUtil.cpp
+ /storage/fhamza/0_elaborato_arch/elaborati/1_kernel/1_kernel_FloydWarshall/src/Host/FileUtil.cpp
 CMakeFiles/floydwarshall.dir/src/Host/PrintExt.cpp.o
  ../include/Host/Basic.hpp
  ../include/Host/Metaprogramming.hpp
@@ -153,4 +153,4 @@ CMakeFiles/floydwarshall.dir/src/Host/PrintExt.cpp.o
  ../include/Host/impl/PrintExt.i.hpp
  ../include/Host/impl/Terminal.i.hpp
  ../include/HostDevice.hpp
- /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Host/PrintExt.cpp
+ /storage/fhamza/0_elaborato_arch/elaborati/1_kernel/1_kernel_FloydWarshall/src/Host/PrintExt.cpp
