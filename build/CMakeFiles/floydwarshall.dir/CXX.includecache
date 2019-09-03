@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -248,43 +248,59 @@ cmath
 
 ../include/HostDevice.hpp
 
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/FloydWarshall.cpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/main.cpp
 FloydWarshall.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/FloydWarshall.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/FloydWarshall.hpp
+Graph/GraphWeight.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/Graph/GraphWeight.hpp
+tuple
+-
+limits
+-
+typeinfo
+-
+math.h
+-
+chrono
+-
+
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/FloydWarshall.cpp
+FloydWarshall.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/FloydWarshall.hpp
 iostream
 -
 limits
 -
 
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphBase.cpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/GraphBase.cpp
 Graph/GraphBase.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Graph/GraphBase.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/Graph/GraphBase.hpp
 Host/Basic.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/Basic.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/Host/Basic.hpp
 Host/FileUtil.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/FileUtil.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/Host/FileUtil.hpp
 Host/Numeric.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/Numeric.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/Host/Numeric.hpp
 Host/PrintExt.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/PrintExt.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/Host/PrintExt.hpp
 iostream
 -
 sstream
 -
 
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphStd.cpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/GraphStd.cpp
 Graph/GraphStd.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Graph/GraphStd.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/Graph/GraphStd.hpp
 Host/Basic.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/Basic.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/Host/Basic.hpp
 Host/FileUtil.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/FileUtil.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/Host/FileUtil.hpp
 Host/Numeric.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/Numeric.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/Host/Numeric.hpp
 Host/PrintExt.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/PrintExt.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/Host/PrintExt.hpp
 Host/Statistics.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/Statistics.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/Host/Statistics.hpp
 algorithm
 -
 cassert
@@ -294,13 +310,13 @@ chrono
 random
 -
 
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphStdRead.cpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/GraphStdRead.cpp
 Graph/GraphStd.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Graph/GraphStd.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/Graph/GraphStd.hpp
 Host/Algorithm.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/Algorithm.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/Host/Algorithm.hpp
 Host/FileUtil.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/FileUtil.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/Host/FileUtil.hpp
 cstring
 -
 sstream
@@ -308,15 +324,15 @@ sstream
 vector
 -
 
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphWeight.cpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/GraphWeight.cpp
 Graph/GraphWeight.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Graph/GraphWeight.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/Graph/GraphWeight.hpp
 Host/Basic.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/Basic.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/Host/Basic.hpp
 Host/FileUtil.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/FileUtil.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/Host/FileUtil.hpp
 Host/PrintExt.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/PrintExt.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/Host/PrintExt.hpp
 algorithm
 -
 cassert
@@ -326,13 +342,13 @@ chrono
 random
 -
 
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphWeightRead.cpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/GraphWeightRead.cpp
 Graph/GraphWeight.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Graph/GraphWeight.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/Graph/GraphWeight.hpp
 Host/Algorithm.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/Algorithm.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/Host/Algorithm.hpp
 Host/FileUtil.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/FileUtil.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Graph/Host/FileUtil.hpp
 cstring
 -
 sstream
@@ -340,11 +356,11 @@ sstream
 vector
 -
 
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Host/FileUtil.cpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Host/FileUtil.cpp
 Host/FileUtil.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Host/Host/FileUtil.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Host/Host/FileUtil.hpp
 Host/Basic.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Host/Host/Basic.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Host/Host/Basic.hpp
 cassert
 -
 fstream
@@ -356,11 +372,11 @@ sys/types.h
 sys/stat.h
 -
 
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Host/PrintExt.cpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Host/PrintExt.cpp
 Host/PrintExt.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Host/Host/PrintExt.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Host/Host/PrintExt.hpp
 Host/Basic.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Host/Host/Basic.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Host/Host/Basic.hpp
 Host/Numeric.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Host/Host/Numeric.hpp
+/home/hamza/Istruzione/Architettura/elaborato/openmp/src/Host/Host/Numeric.hpp
 
