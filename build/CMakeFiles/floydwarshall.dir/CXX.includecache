@@ -248,43 +248,43 @@ cmath
 
 ../include/HostDevice.hpp
 
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/FloydWarshall.cpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/FloydWarshall.cpp
 FloydWarshall.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/FloydWarshall.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/FloydWarshall.hpp
 iostream
 -
 limits
 -
 
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphBase.cpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/GraphBase.cpp
 Graph/GraphBase.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Graph/GraphBase.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/Graph/GraphBase.hpp
 Host/Basic.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/Basic.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/Host/Basic.hpp
 Host/FileUtil.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/FileUtil.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/Host/FileUtil.hpp
 Host/Numeric.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/Numeric.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/Host/Numeric.hpp
 Host/PrintExt.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/PrintExt.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/Host/PrintExt.hpp
 iostream
 -
 sstream
 -
 
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphStd.cpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/GraphStd.cpp
 Graph/GraphStd.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Graph/GraphStd.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/Graph/GraphStd.hpp
 Host/Basic.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/Basic.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/Host/Basic.hpp
 Host/FileUtil.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/FileUtil.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/Host/FileUtil.hpp
 Host/Numeric.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/Numeric.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/Host/Numeric.hpp
 Host/PrintExt.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/PrintExt.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/Host/PrintExt.hpp
 Host/Statistics.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/Statistics.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/Host/Statistics.hpp
 algorithm
 -
 cassert
@@ -294,13 +294,13 @@ chrono
 random
 -
 
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphStdRead.cpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/GraphStdRead.cpp
 Graph/GraphStd.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Graph/GraphStd.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/Graph/GraphStd.hpp
 Host/Algorithm.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/Algorithm.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/Host/Algorithm.hpp
 Host/FileUtil.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/FileUtil.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/Host/FileUtil.hpp
 cstring
 -
 sstream
@@ -308,15 +308,15 @@ sstream
 vector
 -
 
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphWeight.cpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/GraphWeight.cpp
 Graph/GraphWeight.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Graph/GraphWeight.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/Graph/GraphWeight.hpp
 Host/Basic.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/Basic.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/Host/Basic.hpp
 Host/FileUtil.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/FileUtil.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/Host/FileUtil.hpp
 Host/PrintExt.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/PrintExt.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/Host/PrintExt.hpp
 algorithm
 -
 cassert
@@ -326,13 +326,13 @@ chrono
 random
 -
 
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphWeightRead.cpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/GraphWeightRead.cpp
 Graph/GraphWeight.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Graph/GraphWeight.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/Graph/GraphWeight.hpp
 Host/Algorithm.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/Algorithm.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/Host/Algorithm.hpp
 Host/FileUtil.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/Host/FileUtil.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Graph/Host/FileUtil.hpp
 cstring
 -
 sstream
@@ -340,11 +340,11 @@ sstream
 vector
 -
 
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Host/FileUtil.cpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Host/FileUtil.cpp
 Host/FileUtil.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Host/Host/FileUtil.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Host/Host/FileUtil.hpp
 Host/Basic.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Host/Host/Basic.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Host/Host/Basic.hpp
 cassert
 -
 fstream
@@ -356,11 +356,11 @@ sys/types.h
 sys/stat.h
 -
 
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Host/PrintExt.cpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Host/PrintExt.cpp
 Host/PrintExt.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Host/Host/PrintExt.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Host/Host/PrintExt.hpp
 Host/Basic.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Host/Host/Basic.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Host/Host/Basic.hpp
 Host/Numeric.hpp
-/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Host/Host/Numeric.hpp
+/storage/fhamza/0_elaborato_arch/elaborati/3_memCoalescence_FloydWarshall/src/Host/Host/Numeric.hpp
 
