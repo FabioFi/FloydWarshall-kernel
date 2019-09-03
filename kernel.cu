@@ -22,36 +22,35 @@ using namespace std::chrono;
 //nE => numero di archi nel grafo
 
 
-const int BLOCK_SIZE = 32;
-
+const int BLOCK_SIZE_X = 32;
+const int BLOCK_SIZE_Y = 32;
 const float INF = std::numeric_limits<float>::infinity();
 
-
 template<typename T> __global__ void floyd_warshall_kernel(T* matrix, int num_vertices, int k) {
+
+    __shared__ float distyk[BLOCK_SIZE_Y];
+    __shared__ float distkx[BLOCK_SIZE_X];
 
     unsigned int X = blockIdx.x * blockDim.x +threadIdx.x;  //colonne
     unsigned int Y = blockIdx.y * blockDim.y +threadIdx.y;  //righe
 
-    bool readexec;
-
-   __syncthreads();        
-
     if(X<num_vertices && Y<num_vertices){
-        if(matrix[Y * num_vertices + X] == INF)
-            matrix[Y*num_vertices + X] = matrix[Y*num_vertices + k] + matrix[k*num_vertices + X];
-        else
-            if(matrix[Y*num_vertices + k] + matrix[k*num_vertices + X] < matrix[Y*num_vertices + X])
+        
+        //float distyx = matrix[Y*num_vertices+X];
+
+        if(Y % BLOCK_SIZE_Y == 0)
+            distkx[X%BLOCK_SIZE_X] = matrix[k*num_vertices+X];
+        
+        if(X % BLOCK_SIZE_X == 0)
+            distyk[Y%BLOCK_SIZE_Y] = matrix[Y*num_vertices+k];
+
+        __syncthreads();
+        if (distyk[Y%BLOCK_SIZE_Y] != INF &&
+            distkx[X%BLOCK_SIZE_X] != INF &&
+            distyk[Y%BLOCK_SIZE_Y] + distkx[X%BLOCK_SIZE_X] < matrix[Y*num_vertices + X])
                 matrix[Y*num_vertices + X] = matrix[Y*num_vertices + k] + matrix[k*num_vertices + X];
-
-    }
+    } 
 }
-
-/*
-for (int i = 1; i < blockDim.x; i *= 2) {
-Heavy Branch
-Divergence
-if (threadIdx.x % (i * 2) == 0)
-*/
 
 __host__ int main(int argc, char* argv[]) {
 
@@ -65,6 +64,7 @@ __host__ int main(int argc, char* argv[]) {
     graph.read(argv[1]);    //si copia da file i valori dati
 
     auto matrix = new matrix_t*[graph.nV()];    //usata per la parte di codice sequenziale
+    const int nV = graph.nV();
 
     // -------------------------------------------------------------------------
     // HOST INITILIZATION
@@ -106,8 +106,8 @@ __host__ int main(int argc, char* argv[]) {
     // -------------------------------------------------------------------------
     // DEVICE EXECUTION
 
-    dim3 block_size(BLOCK_SIZE,BLOCK_SIZE);
-    dim3 num_blocks( (graph.nV()+BLOCK_SIZE-1)/BLOCK_SIZE, (graph.nV()+BLOCK_SIZE-1)/BLOCK_SIZE);
+    dim3 block_size(BLOCK_SIZE_X,BLOCK_SIZE_Y);
+    dim3 num_blocks( (graph.nV()+BLOCK_SIZE_X-1)/BLOCK_SIZE_X, (graph.nV()+BLOCK_SIZE_Y-1)/BLOCK_SIZE_Y);
 
     /// time start
     cudaEvent_t startTimeCuda, stopTimeCuda;
@@ -116,7 +116,7 @@ __host__ int main(int argc, char* argv[]) {
     cudaEventRecord(startTimeCuda, 0);
 
     for(int k = 0; k < graph.nV(); k++)
-        floyd_warshall_kernel<<< num_blocks, block_size >>>(d_matrix,graph.nV(), k);
+        floyd_warshall_kernel<<< num_blocks, block_size >>>(d_matrix,nV, k);
     
     cudaEventRecord(stopTimeCuda,0);
     cudaEventSynchronize(stopTimeCuda);
@@ -148,7 +148,7 @@ __host__ int main(int argc, char* argv[]) {
             if (h_matrix[i*graph.nV()+j] != matrix[i][j]) {
                 std::cerr << "wrong result at: ("
                         << i << ", " << j << ")"
-                        << "\nhost:   " << matrix[i][j] 
+                        << "\nhost:   " << matrix[i][j]
                         << "\ndevice: " << h_matrix[i*graph.nV()+j] << "\n\n";
                 cudaDeviceReset();
                 std::exit(EXIT_FAILURE);
