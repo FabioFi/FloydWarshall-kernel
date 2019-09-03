@@ -2,11 +2,14 @@
 #include "Graph/GraphWeight.hpp"
 #include <tuple>
 #include <limits>
-#include <chrono>
 #include <iomanip>
 #include <iostream>
 #include <random>
 #include <chrono>
+
+#include <thread>
+
+#include <fstream>
 
 
 using matrix_t = float; //matrix_t is like float
@@ -19,25 +22,25 @@ using namespace std::chrono;
 //nE => numero di archi nel grafo
 
 
-const int BLOCK_SIZE_X = 16;
-const int BLOCK_SIZE_Y = 16;
+const int BLOCK_SIZE_X = 32;
+const int BLOCK_SIZE_Y = 32;
 
-template<typename T> __global__ void floyd_warshall_kernel(T* matrix, int num_vertices, float INF, int k) {
+const float INF = std::numeric_limits<float>::infinity();
+
+
+template<typename T> __global__ void floyd_warshall_kernel(T* matrix, int num_vertices, int k) {
 
     unsigned int X = blockIdx.x * blockDim.x +threadIdx.x;  //colonne
     unsigned int Y = blockIdx.y * blockDim.y +threadIdx.y;  //righe
 
-    if(X<num_vertices && Y<num_vertices){
+    if(X<num_vertices && Y<num_vertices)
         if (matrix[Y*num_vertices + k] != INF &&
             matrix[k*num_vertices + X] != INF &&
             matrix[Y*num_vertices + k] + matrix[k*num_vertices + X] < matrix[Y*num_vertices + X])
                 matrix[Y*num_vertices + X] = matrix[Y*num_vertices + k] + matrix[k*num_vertices + X];
-    } 
 }
 
-int main(int argc, char* argv[]) {
-
-    const float INF = std::numeric_limits<float>::infinity();
+__host__ int main(int argc, char* argv[]) {
 
     // se non trova due argomenti termina perchè manca l'input
     if (argc != 2)
@@ -70,9 +73,10 @@ int main(int argc, char* argv[]) {
         for(int j = 0; j < graph.nV(); j++)
             h_matrix[i*graph.nV() + j] = matrix[i][j];
 
-    high_resolution_clock::time_point t1 = high_resolution_clock::now();
+    auto t1 = std::chrono::system_clock::now();
+    //std::this_thread::sleep_for(seconds(5));
     floyd_warshall::floyd_warshall(matrix, graph.nV()); //codice sequenziale
-    high_resolution_clock::time_point t2 = high_resolution_clock::now();
+    auto t2 = std::chrono::system_clock::now();
     long double duration = duration_cast<milliseconds>( t2 - t1 ).count();
     std::cout << "TIME CPU " << duration/1000 << '\n';
 
@@ -99,7 +103,7 @@ int main(int argc, char* argv[]) {
     cudaEventRecord(startTimeCuda, 0);
 
     for(int k = 0; k < graph.nV(); k++)
-        floyd_warshall_kernel<<< num_blocks, block_size >>>(d_matrix,graph.nV(), INF, k);
+        floyd_warshall_kernel<<< num_blocks, block_size >>>(d_matrix,graph.nV(), k);
     
     cudaEventRecord(stopTimeCuda,0);
     cudaEventSynchronize(stopTimeCuda);
@@ -113,15 +117,26 @@ int main(int argc, char* argv[]) {
     // COPY DATA FROM DEVICE TO HOST
     cudaMemcpy(h_matrix, d_matrix, dim_data, cudaMemcpyDeviceToHost);
 
+    // CREATE A FILE OF VALUES
+    std::ofstream myfile;
+    myfile.open ("../data.csv");
+    for (int i = 0; i < graph.nV(); i++){
+        for(int j = 0; j < graph.nV(); j++){
+            myfile << h_matrix[i*graph.nV() + j] << ",";
+        }
+        myfile << '\n';
+    }
+    myfile.close();
+
     //--------------------------------------------------------------------------
     // RESULT CHECK
     for (int i = 0; i < graph.nV(); i++)
         for(int j = 0; j < graph.nV(); j++)
             if (h_matrix[i*graph.nV()+j] != matrix[i][j]) {
                 std::cerr << "wrong result at: ("
-                        << (i / graph.nV()) << ", " << (i % graph.nV()) << ")"
-                        << "\nhost:   " << h_matrix[i*graph.nV()+j]
-                        << "\ndevice: " << matrix[i][j] << "\n\n";
+                        << i << ", " << j << ")"
+                        << "\nhost:   " << matrix[i][j]
+                        << "\ndevice: " << h_matrix[i*graph.nV()+j] << "\n\n";
                 cudaDeviceReset();
                 std::exit(EXIT_FAILURE);
             }
