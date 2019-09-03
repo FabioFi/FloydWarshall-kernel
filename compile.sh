@@ -2,4 +2,4 @@
 
 rm -r *;
 cmake ..;
-make;
+make -j4;
