@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall
+CMAKE_SOURCE_DIR = "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build
+CMAKE_BINARY_DIR = "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/build"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/floydwarshall.dir/depend.make
@@ -60,22 +60,22 @@ include CMakeFiles/floydwarshall.dir/flags.make
 CMakeFiles/floydwarshall.dir/floydwarshall_generated_kernel.cu.o: CMakeFiles/floydwarshall.dir/floydwarshall_generated_kernel.cu.o.depend
 CMakeFiles/floydwarshall.dir/floydwarshall_generated_kernel.cu.o: CMakeFiles/floydwarshall.dir/floydwarshall_generated_kernel.cu.o.cmake
 CMakeFiles/floydwarshall.dir/floydwarshall_generated_kernel.cu.o: ../kernel.cu
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object CMakeFiles/floydwarshall.dir/floydwarshall_generated_kernel.cu.o"
-	cd /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles/floydwarshall.dir && /usr/bin/cmake -E make_directory /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles/floydwarshall.dir//.
-	cd /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles/floydwarshall.dir && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D generated_file:STRING=/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles/floydwarshall.dir//./floydwarshall_generated_kernel.cu.o -D generated_cubin_file:STRING=/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles/floydwarshall.dir//./floydwarshall_generated_kernel.cu.o.cubin.txt -P /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles/floydwarshall.dir//floydwarshall_generated_kernel.cu.o.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir="/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building NVCC (Device) object CMakeFiles/floydwarshall.dir/floydwarshall_generated_kernel.cu.o"
+	cd "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/build/CMakeFiles/floydwarshall.dir" && /usr/bin/cmake -E make_directory "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/build/CMakeFiles/floydwarshall.dir//."
+	cd "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/build/CMakeFiles/floydwarshall.dir" && /usr/bin/cmake -D verbose:BOOL=$(VERBOSE) -D build_configuration:STRING= -D "generated_file:STRING=/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/build/CMakeFiles/floydwarshall.dir//./floydwarshall_generated_kernel.cu.o" -D "generated_cubin_file:STRING=/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/build/CMakeFiles/floydwarshall.dir//./floydwarshall_generated_kernel.cu.o.cubin.txt" -P "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/build/CMakeFiles/floydwarshall.dir//floydwarshall_generated_kernel.cu.o.cmake"
 
 CMakeFiles/floydwarshall.dir/src/FloydWarshall.cpp.o: CMakeFiles/floydwarshall.dir/flags.make
 CMakeFiles/floydwarshall.dir/src/FloydWarshall.cpp.o: ../src/FloydWarshall.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/floydwarshall.dir/src/FloydWarshall.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/floydwarshall.dir/src/FloydWarshall.cpp.o -c /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/FloydWarshall.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/floydwarshall.dir/src/FloydWarshall.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/floydwarshall.dir/src/FloydWarshall.cpp.o -c "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/src/FloydWarshall.cpp"
 
 CMakeFiles/floydwarshall.dir/src/FloydWarshall.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/floydwarshall.dir/src/FloydWarshall.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/FloydWarshall.cpp > CMakeFiles/floydwarshall.dir/src/FloydWarshall.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/src/FloydWarshall.cpp" > CMakeFiles/floydwarshall.dir/src/FloydWarshall.cpp.i
 
 CMakeFiles/floydwarshall.dir/src/FloydWarshall.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/floydwarshall.dir/src/FloydWarshall.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/FloydWarshall.cpp -o CMakeFiles/floydwarshall.dir/src/FloydWarshall.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/src/FloydWarshall.cpp" -o CMakeFiles/floydwarshall.dir/src/FloydWarshall.cpp.s
 
 CMakeFiles/floydwarshall.dir/src/FloydWarshall.cpp.o.requires:
 
@@ -90,16 +90,16 @@ CMakeFiles/floydwarshall.dir/src/FloydWarshall.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/floydwarshall.dir/src/Graph/GraphBase.cpp.o: CMakeFiles/floydwarshall.dir/flags.make
 CMakeFiles/floydwarshall.dir/src/Graph/GraphBase.cpp.o: ../src/Graph/GraphBase.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/floydwarshall.dir/src/Graph/GraphBase.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/floydwarshall.dir/src/Graph/GraphBase.cpp.o -c /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphBase.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/floydwarshall.dir/src/Graph/GraphBase.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/floydwarshall.dir/src/Graph/GraphBase.cpp.o -c "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/src/Graph/GraphBase.cpp"
 
 CMakeFiles/floydwarshall.dir/src/Graph/GraphBase.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/floydwarshall.dir/src/Graph/GraphBase.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphBase.cpp > CMakeFiles/floydwarshall.dir/src/Graph/GraphBase.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/src/Graph/GraphBase.cpp" > CMakeFiles/floydwarshall.dir/src/Graph/GraphBase.cpp.i
 
 CMakeFiles/floydwarshall.dir/src/Graph/GraphBase.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/floydwarshall.dir/src/Graph/GraphBase.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphBase.cpp -o CMakeFiles/floydwarshall.dir/src/Graph/GraphBase.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/src/Graph/GraphBase.cpp" -o CMakeFiles/floydwarshall.dir/src/Graph/GraphBase.cpp.s
 
 CMakeFiles/floydwarshall.dir/src/Graph/GraphBase.cpp.o.requires:
 
@@ -114,16 +114,16 @@ CMakeFiles/floydwarshall.dir/src/Graph/GraphBase.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/floydwarshall.dir/src/Graph/GraphStd.cpp.o: CMakeFiles/floydwarshall.dir/flags.make
 CMakeFiles/floydwarshall.dir/src/Graph/GraphStd.cpp.o: ../src/Graph/GraphStd.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/floydwarshall.dir/src/Graph/GraphStd.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/floydwarshall.dir/src/Graph/GraphStd.cpp.o -c /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphStd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/floydwarshall.dir/src/Graph/GraphStd.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/floydwarshall.dir/src/Graph/GraphStd.cpp.o -c "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/src/Graph/GraphStd.cpp"
 
 CMakeFiles/floydwarshall.dir/src/Graph/GraphStd.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/floydwarshall.dir/src/Graph/GraphStd.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphStd.cpp > CMakeFiles/floydwarshall.dir/src/Graph/GraphStd.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/src/Graph/GraphStd.cpp" > CMakeFiles/floydwarshall.dir/src/Graph/GraphStd.cpp.i
 
 CMakeFiles/floydwarshall.dir/src/Graph/GraphStd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/floydwarshall.dir/src/Graph/GraphStd.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphStd.cpp -o CMakeFiles/floydwarshall.dir/src/Graph/GraphStd.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/src/Graph/GraphStd.cpp" -o CMakeFiles/floydwarshall.dir/src/Graph/GraphStd.cpp.s
 
 CMakeFiles/floydwarshall.dir/src/Graph/GraphStd.cpp.o.requires:
 
@@ -138,16 +138,16 @@ CMakeFiles/floydwarshall.dir/src/Graph/GraphStd.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/floydwarshall.dir/src/Graph/GraphStdRead.cpp.o: CMakeFiles/floydwarshall.dir/flags.make
 CMakeFiles/floydwarshall.dir/src/Graph/GraphStdRead.cpp.o: ../src/Graph/GraphStdRead.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/floydwarshall.dir/src/Graph/GraphStdRead.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/floydwarshall.dir/src/Graph/GraphStdRead.cpp.o -c /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphStdRead.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/floydwarshall.dir/src/Graph/GraphStdRead.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/floydwarshall.dir/src/Graph/GraphStdRead.cpp.o -c "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/src/Graph/GraphStdRead.cpp"
 
 CMakeFiles/floydwarshall.dir/src/Graph/GraphStdRead.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/floydwarshall.dir/src/Graph/GraphStdRead.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphStdRead.cpp > CMakeFiles/floydwarshall.dir/src/Graph/GraphStdRead.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/src/Graph/GraphStdRead.cpp" > CMakeFiles/floydwarshall.dir/src/Graph/GraphStdRead.cpp.i
 
 CMakeFiles/floydwarshall.dir/src/Graph/GraphStdRead.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/floydwarshall.dir/src/Graph/GraphStdRead.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphStdRead.cpp -o CMakeFiles/floydwarshall.dir/src/Graph/GraphStdRead.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/src/Graph/GraphStdRead.cpp" -o CMakeFiles/floydwarshall.dir/src/Graph/GraphStdRead.cpp.s
 
 CMakeFiles/floydwarshall.dir/src/Graph/GraphStdRead.cpp.o.requires:
 
@@ -162,16 +162,16 @@ CMakeFiles/floydwarshall.dir/src/Graph/GraphStdRead.cpp.o.provides.build: CMakeF
 
 CMakeFiles/floydwarshall.dir/src/Graph/GraphWeight.cpp.o: CMakeFiles/floydwarshall.dir/flags.make
 CMakeFiles/floydwarshall.dir/src/Graph/GraphWeight.cpp.o: ../src/Graph/GraphWeight.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/floydwarshall.dir/src/Graph/GraphWeight.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/floydwarshall.dir/src/Graph/GraphWeight.cpp.o -c /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphWeight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/floydwarshall.dir/src/Graph/GraphWeight.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/floydwarshall.dir/src/Graph/GraphWeight.cpp.o -c "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/src/Graph/GraphWeight.cpp"
 
 CMakeFiles/floydwarshall.dir/src/Graph/GraphWeight.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/floydwarshall.dir/src/Graph/GraphWeight.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphWeight.cpp > CMakeFiles/floydwarshall.dir/src/Graph/GraphWeight.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/src/Graph/GraphWeight.cpp" > CMakeFiles/floydwarshall.dir/src/Graph/GraphWeight.cpp.i
 
 CMakeFiles/floydwarshall.dir/src/Graph/GraphWeight.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/floydwarshall.dir/src/Graph/GraphWeight.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphWeight.cpp -o CMakeFiles/floydwarshall.dir/src/Graph/GraphWeight.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/src/Graph/GraphWeight.cpp" -o CMakeFiles/floydwarshall.dir/src/Graph/GraphWeight.cpp.s
 
 CMakeFiles/floydwarshall.dir/src/Graph/GraphWeight.cpp.o.requires:
 
@@ -186,16 +186,16 @@ CMakeFiles/floydwarshall.dir/src/Graph/GraphWeight.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/floydwarshall.dir/src/Graph/GraphWeightRead.cpp.o: CMakeFiles/floydwarshall.dir/flags.make
 CMakeFiles/floydwarshall.dir/src/Graph/GraphWeightRead.cpp.o: ../src/Graph/GraphWeightRead.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/floydwarshall.dir/src/Graph/GraphWeightRead.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/floydwarshall.dir/src/Graph/GraphWeightRead.cpp.o -c /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphWeightRead.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/floydwarshall.dir/src/Graph/GraphWeightRead.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/floydwarshall.dir/src/Graph/GraphWeightRead.cpp.o -c "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/src/Graph/GraphWeightRead.cpp"
 
 CMakeFiles/floydwarshall.dir/src/Graph/GraphWeightRead.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/floydwarshall.dir/src/Graph/GraphWeightRead.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphWeightRead.cpp > CMakeFiles/floydwarshall.dir/src/Graph/GraphWeightRead.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/src/Graph/GraphWeightRead.cpp" > CMakeFiles/floydwarshall.dir/src/Graph/GraphWeightRead.cpp.i
 
 CMakeFiles/floydwarshall.dir/src/Graph/GraphWeightRead.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/floydwarshall.dir/src/Graph/GraphWeightRead.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Graph/GraphWeightRead.cpp -o CMakeFiles/floydwarshall.dir/src/Graph/GraphWeightRead.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/src/Graph/GraphWeightRead.cpp" -o CMakeFiles/floydwarshall.dir/src/Graph/GraphWeightRead.cpp.s
 
 CMakeFiles/floydwarshall.dir/src/Graph/GraphWeightRead.cpp.o.requires:
 
@@ -210,16 +210,16 @@ CMakeFiles/floydwarshall.dir/src/Graph/GraphWeightRead.cpp.o.provides.build: CMa
 
 CMakeFiles/floydwarshall.dir/src/Host/FileUtil.cpp.o: CMakeFiles/floydwarshall.dir/flags.make
 CMakeFiles/floydwarshall.dir/src/Host/FileUtil.cpp.o: ../src/Host/FileUtil.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/floydwarshall.dir/src/Host/FileUtil.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/floydwarshall.dir/src/Host/FileUtil.cpp.o -c /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Host/FileUtil.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/floydwarshall.dir/src/Host/FileUtil.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/floydwarshall.dir/src/Host/FileUtil.cpp.o -c "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/src/Host/FileUtil.cpp"
 
 CMakeFiles/floydwarshall.dir/src/Host/FileUtil.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/floydwarshall.dir/src/Host/FileUtil.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Host/FileUtil.cpp > CMakeFiles/floydwarshall.dir/src/Host/FileUtil.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/src/Host/FileUtil.cpp" > CMakeFiles/floydwarshall.dir/src/Host/FileUtil.cpp.i
 
 CMakeFiles/floydwarshall.dir/src/Host/FileUtil.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/floydwarshall.dir/src/Host/FileUtil.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Host/FileUtil.cpp -o CMakeFiles/floydwarshall.dir/src/Host/FileUtil.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/src/Host/FileUtil.cpp" -o CMakeFiles/floydwarshall.dir/src/Host/FileUtil.cpp.s
 
 CMakeFiles/floydwarshall.dir/src/Host/FileUtil.cpp.o.requires:
 
@@ -234,16 +234,16 @@ CMakeFiles/floydwarshall.dir/src/Host/FileUtil.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/floydwarshall.dir/src/Host/PrintExt.cpp.o: CMakeFiles/floydwarshall.dir/flags.make
 CMakeFiles/floydwarshall.dir/src/Host/PrintExt.cpp.o: ../src/Host/PrintExt.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/floydwarshall.dir/src/Host/PrintExt.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/floydwarshall.dir/src/Host/PrintExt.cpp.o -c /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Host/PrintExt.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/floydwarshall.dir/src/Host/PrintExt.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/floydwarshall.dir/src/Host/PrintExt.cpp.o -c "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/src/Host/PrintExt.cpp"
 
 CMakeFiles/floydwarshall.dir/src/Host/PrintExt.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/floydwarshall.dir/src/Host/PrintExt.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Host/PrintExt.cpp > CMakeFiles/floydwarshall.dir/src/Host/PrintExt.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/src/Host/PrintExt.cpp" > CMakeFiles/floydwarshall.dir/src/Host/PrintExt.cpp.i
 
 CMakeFiles/floydwarshall.dir/src/Host/PrintExt.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/floydwarshall.dir/src/Host/PrintExt.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/src/Host/PrintExt.cpp -o CMakeFiles/floydwarshall.dir/src/Host/PrintExt.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/src/Host/PrintExt.cpp" -o CMakeFiles/floydwarshall.dir/src/Host/PrintExt.cpp.s
 
 CMakeFiles/floydwarshall.dir/src/Host/PrintExt.cpp.o.requires:
 
@@ -269,7 +269,7 @@ floydwarshall_OBJECTS = \
 
 # External object files for target floydwarshall
 floydwarshall_EXTERNAL_OBJECTS = \
-"/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles/floydwarshall.dir/floydwarshall_generated_kernel.cu.o"
+"/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/build/CMakeFiles/floydwarshall.dir/floydwarshall_generated_kernel.cu.o"
 
 floydwarshall: CMakeFiles/floydwarshall.dir/src/FloydWarshall.cpp.o
 floydwarshall: CMakeFiles/floydwarshall.dir/src/Graph/GraphBase.cpp.o
@@ -284,7 +284,7 @@ floydwarshall: CMakeFiles/floydwarshall.dir/build.make
 floydwarshall: /usr/local/cuda/lib64/libcudart_static.a
 floydwarshall: /usr/lib/x86_64-linux-gnu/librt.so
 floydwarshall: CMakeFiles/floydwarshall.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable floydwarshall"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable floydwarshall"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/floydwarshall.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -308,6 +308,6 @@ CMakeFiles/floydwarshall.dir/clean:
 .PHONY : CMakeFiles/floydwarshall.dir/clean
 
 CMakeFiles/floydwarshall.dir/depend: CMakeFiles/floydwarshall.dir/floydwarshall_generated_kernel.cu.o
-	cd /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/CMakeFiles/floydwarshall.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall" "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall" "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/build" "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/build" "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/build/CMakeFiles/floydwarshall.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/floydwarshall.dir/depend
 

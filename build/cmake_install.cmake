@@ -1,4 +1,4 @@
-# Install script for directory: /storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall
+# Install script for directory: /storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/storage/fhamza/0_elaborato_arch/elaborati/1_kernel_FloydWarshall/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/storage/fhamza/0_elaborato_arch/elaborati/singoli elaborati/4b_BlockedSharedMem_FloydWarshall/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
